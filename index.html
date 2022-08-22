@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lightMode.css">
+    <link rel="stylesheet" href="darkMode.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+    <script src="mode_switch_toggle.js"></script>
+    <title>jquery form validation</title>
+</head>
+<body>
+
+    <div class="flex-container" id="header_container">
+       <ul> 
+           <li style="float: left"><h2 id="header">Knowledge Check - Deziallia Morris</h2></li>
+           <li><h2 id="mode_switch" onclick="mode_switch_toggle()">Light Mode</h2></li>
+           <li id="links">
+            <button id="link_button"><h2>Links</h2></button>
+            <div id="link_menu">
+                <a href="reservation/index.html" target="_blank">Reservation</a>
+                <a href="carousel/index.html" target="_blank">Carousel</a>
+            </div> <!-- end of link menu-->
+            </li> 
+        </ul> <!-- end of list-->
+    </div> <!-- end of header_container-->
+
+    <div id="main_container">
+        <div id="content_container">
+            <div id="content_title"><label>Assignment</label></div>
+                <div id="prompt">
+                    Provide a detailed explanation for the following questions:
+                    <ol>
+                        <li>
+                            Provide an explanation of how jQuery can enhance validation for an online form.
+                            <br>Provide a list of 2 web sites that are strong tutorials that demonstrate examples of 
+                            jQuery used in form validation.
+                        </li><br>
+                        <li>
+                            Describe at least 4 methods or selectors that you believe are most important in 
+                            creating an online form with jQuery validation.
+                        </li><br>
+                        <li>Provide a detailed explanation/ comparison between a jQuery plugin and a jQuery UI widget.</li><br>
+                        <li>
+                            From the website user’s point of view, describe the operation of any of one of these plugins:
+                            <br>Lightbox, bxSlider, or Cycle 2.
+                        </li><br>
+                        <li>Describe in detail the process of finding and using a jQuery plugin.</li><br>
+                        <li>Describe in detail the the files and folders that jQuery UI requires, and explain how to include
+                            them in your web pages.</li>
+                    </ol>
+                </div>
+                <div id="answer">
+                    <i>
+                        <p>
+                            jQuery can enhance validation for an online form by simplifying the steps it would 
+                            take to do so as opposed to just regular JavaScript. For example, having the script ready as 
+                            soon as the DOM has loaded in. Accessing multiple fields in one line of code than having to call 
+                            each field one by one like in JS.
+                        </p>
+                        <p>
+                            The first website that I found that demonstrates form validation is 
+                            <a href="https://www.spotify.com/us/signup">Spotify</a>'s <b>sign up form</b> (see image gallery for example).<br>
+                            This form will show an error message when the input field loses focus without anything being entered.
+                        </p>
+                        <p>
+                            The second website that demonstrates form validation is
+                            <a href="https://signin.ea.com/p/originX/create?execution=e488335658s1&initref=https%3A%2F%2Faccounts.ea.com%3A443%2Fconnect%2Fauth%3Fdisplay%3DoriginXWeb%252Fcreate%26response_type%3Dcode%26release_type%3Dprod%26redirect_uri%3Dhttps%253A%252F%252Fwww.origin.com%252Fviews%252Flogin.html%26locale%3Den_US%26client_id%3DORIGIN_SPA_ID#">
+                                Origin</a>'s <b>create an account form</b> (see image gallery for example).<br>
+                            This form shows an error when the field isn't correctly formed. It also has a reminder for the password field 
+                            that shows the requirements for a password.
+                        </p>
+                        <br>
+                        <p>
+                            For the four methods / selectors I find most important when creating an online form with jQuery validation, I believe
+                            the :input selector, :text, val/val(value) methods and the trim() method should be at the top of the list.<br>
+                        </p>
+                        <p>
+                            The :input selector can gather any fields in a form that have an input element. That's pretty useful for accessing controls and validating input 
+                            from the end users.<br>
+                        </p>
+                        <p>
+                            The :text selector is just like the input selector except it is specific to text based input types. This is good for grabbing all of the text 
+                            in a form without having to go through the input selector.<br>
+                        </p>
+                        <p>
+                            The val/val(value) methods are really good at grabbing a value at whatever element is selected and can change the selected elements value at any 
+                            time. I find that pretty cool and time-effiecient.<br>
+                        </p>
+                        <p>
+                            The trim() method is by far, the best method to use in jQuery. It trims off all whitespaces that aren't need in an input, which can save a lot 
+                            of lines of code and makes the validation process even easier.
+                        </p>
+                        <br>
+                        <p>
+                            The difference between a jQuery plugin and a jQuery UI widget is the amount of code it takes to utilize the tool. jQuery UI is 
+                            basically a user interface where as the plugin is what it sounds like, a plug into a feature.
+                            The ways in which the two are similar is that they both have to be linked to your website in some way to function properly.
+                        </p>
+                        <br>
+                        <p>
+                            A bxSlider seems to me (as a user) like a really expansive slideshow. It holds a lot of potential to be super helpful 
+                            and user-friendly.
+                        </p>
+                        <br>
+                        <p>
+                            Plugins can be found through various websites:<br>
+                            <a href="http://plugins.jquery.com">the jQuery Plugin Registry</a>,<br>
+                            <a href="http://jquery-plugins.net">jQuery Plugins</a>,<br>
+                            <a href="http://code.google.com">Google Code</a><br>
+                            and many more.
+                        </p>
+                        <p>
+                            To use a plugin, you must first look at the documentation of the plugin to see what code is required to use the plugin 
+                            successfully. Then you can either download the plugin and save it to your website or get the URL for the plugin's CDN.
+                            After downloading or getting the URL for the CDN, script in the plugin or link the download.
+                            After these steps have been done, it's simply a plug and play from that point on.
+                        </p>
+                        <br>
+                        <p>
+                            The files and folders that jQuery UI requires to operate correctly includes:<br>
+                            the jQuery library in an external folder, the index file that demos the features, the uncomped versions of the CSS 
+                            and jQuery files, and the CSS files of the structure and theme (which can be optional);<br>
+                            Widgets only need the jQuery UI CSS file, the jQuery UI library file, and an images folder that contains the images needed.<br>
+                        </p>
+                        <p>
+                            This files and folders can be included by using the link and script elements in an HTML doc. The link element would 
+                            link the min CSS file. And the script element would link the CDN URL. A second script would link to the min jQuery UI file and the 
+                            third script element would link to the JS file if it isn't coded in the last (third) script.
+                        </p>
+                    </i>
+                </div>
+                <div id="citation">
+                    <br>
+                    <p>
+                    <i>
+                        Delamater, M. and Ruvalcaba, Z., n.d. Murach's JavaScript and jQuery. 3rd ed
+                        "Spotify.com" spotify.com Accessed 23 June 2022.
+                        "Origin.com" origin.com. Accessed 23 June 2022.
+                    </i>
+                    </p>
+                </div>
+        </div> <!-- end of content_container-->
+        <div id="images_container">
+            <div id="image_title"><label>Images</label></div>
+            <div id="images">
+                <img class="images" src="images/screen1.png">
+                <img class="images" src="images/screen2.png">
+                <img class="images" src="images/screen3.png">
+                <img class="images" src="images/screen4.png">
+                <img class="images" src="images/screen5.png">
+                <img class="images" src="images/screen6.png">
+                <img class="images" src="images/screen7.png">
+                <img class="images" src="images/screen8.png">
+                <img class="images" src="images/screen9.png">
+        </div> <!-- end of images_container-->
+        <div id="footer"></div>
+    </div> <!-- end of main_container-->
+</body>
+</html>
